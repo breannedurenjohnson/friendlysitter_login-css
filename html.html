@@ -1,0 +1,138 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter|Montserrat+Alternates&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" id="brand">friendly sitter</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="navlink" href="#info">About Us</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a class="nav-link" id="navlink" href="/parents/new"
+          >Parent Registration</a
+        >
+      </span>
+      <span class="navbar-text">
+        <a class="nav-link" id="navlink" href="/sitters/new"
+          >Sitter Registration</a
+        >
+      </span>
+    </nav>
+    <div class="container-fluid">
+      <div class="row" id="main">
+        <div class="col-md-7">
+          <div>
+            <h1 id="brand">friendly sitter</h1>
+            <h5>Find the best sitters for your family.</h5>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4" id="login">
+          <p>Already a Member?</p>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                name="email"
+                id="Email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="Password"
+                placeholder="Password"
+              />
+            </div>
+            <button id="login_btn" type="submit" value="Log In">
+              <span>Log In</span><img src="right-arrow-60.png" alt="arrow" />
+            </button>
+          </form>
+          <br />
+          <!-- <%= flash[:errors] %> -->
+          <div id="i_am">
+            <a href="/parents/new"
+              ><h6>
+                I am a Parent <img src="right-arrow-60.png" alt="arrow" /></h6
+            ></a>
+            <a href="/sitters/new"
+              ><h6>
+                I am a Sitter <img src="right-arrow-60.png" alt="arrow" /></h6
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div id="info">
+        <div id="info_headline">
+          <h6>
+            We know the importance of finding great sitters you love and trust.
+          </h6>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img src="family-100.png" alt="family" />
+            <h5>Build Your Network</h5>
+            <p>
+              Find great sitters that come highly recommended by your own
+              personal contacts.
+            </p>
+          </div>
+          <div class="card">
+            <img src="hands-100.png" alt="hands" />
+            <h5>Reliable, Trusted Sitters</h5>
+            <p>
+              All sitters are vouched for by those you know and trust. (We
+              perform background-checks too.)
+            </p>
+          </div>
+          <div class="card">
+            <img src="calendar-128.png" alt="calendar" />
+            <h5>Easy Scheduling</h5>
+            <p>
+              Conveniently send one message to all your sitters when you need to
+              schedule child care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a href="#"><h6>↑ Back to Top</h6></a>
+      <div class="row">
+        <div class="col" id="socials">
+          <p id="brand">friendly sitter</p>
+          <img src="linkedin-100.png" alt="linkedin" />
+          <img src="twitter-100.png" alt="twitter" />
+          <img src="play-button-100.png" alt="play-button" />
+          <img src="facebook-100.png" alt="facebook" />
+        </div>
+        <div class="col">
+          <p>About</p>
+          <p>Contact Us</p>
+          <p>Partners</p>
+        </div>
+        <div class="col">
+          <p>© Copyright 2020 friendly sitter.</p>
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</head>
